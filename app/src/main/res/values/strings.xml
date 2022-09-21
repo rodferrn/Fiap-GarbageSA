@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">GarbageSA</string>
+    <string name="garbage_sa_title">Garbage SA</string>
+    <string name="welcome_message">Boas vindas ao Garbage SA.\n\n
+        Se você chegou até aqui isso significa que você tem consciência da quantidade de material reciclável
+    que é descartado na natureza e sabe de todo o dano que isso vem causando ao nosso planeta.\n
+        Por isso que nós da Garbage SA temos um compromisso
+    com você e nossa cidade oferecendo um serviço de coleta de material reciclável diretamente em sua residência.\n\n
+        Conscientização é a palavra que transforma
+    o mundo.\n\n
+        Agora.. Sabe qual é a melhor parte disso ? A cada coleta de material reciclável que você contribui você acumula pontos para utiliza-los como quiser
+    em um de nossos parceiros.\n
+        São diversos parceiros e você pode trocar seus pontos por produtos, serviços e muito mais!\n\n
+    É muito fácil contribuir. Você marca sua a localização no mapa, agenda a coleta e após a coleta recebe seus pontos!\n
+    Vamos juntos transformar nosso mundo em lugar melhor e a Garbage SA ainda te recompensa por isso ;)</string>
+    <string name="action_settings">Settings</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="login">LOGIN</string>
+    <string name="show_pwd">Mostrar Senha</string>
+    <string name="hide_pwd">Esconder Senha</string>
+    <string name="forgot">Esqueceu sua senha?</string>
+    <string name="closebutton">Close Button for Activity</string>
+    <string name="newUser">Ainda não tem cadastro? Clique aqui.</string>
+    <string name="fullName">Nome Completo</string>
+    <string name="mobileNumber">Celular</string>
+    <string name="cpf">CPF</string>
+    <string name="confirmPassword">Confirme sua senha</string>
+    <string name="terms_conditions">Ao clicar em REGISTRAR você aceita os termos de condições da Garbage SA.</string>
+    <string name="solicitar_cpf">Solicitamos o seu CPF no cadastro pois nosso sistema de pontuação credita os pontos em seu CPF para que
+    possa trocar por produtos, serviços e utilidades em um dos nossos parceiros.</string>
+    <string name="signUp">REGISTRAR</string>
+    <string name="already_user">Já é cadastradot? Efetue o login aqui.</string>
+    <string name="registered_emailid">Inserir seu email cadastrado:</string>
+    <string name="submit">ENVIAR</string>
+    <string name="back">VOLTAR</string>
+    <string name="channel_name">channel_name</string>
+    <string name="channel_description">channel_description</string>
+</resources>

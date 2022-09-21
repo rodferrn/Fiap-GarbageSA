@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".TelaAgendamento">
+
+    <TextView
+        android:id="@+id/txv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/garbage_sa_title"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/txv_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agendamento"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/txv_title"
+        app:layout_constraintStart_toStartOf="@id/txv_title"
+        app:layout_constraintEnd_toEndOf="@id/txv_title"
+        />
+
+    <TextView
+        android:id="@+id/txv_agendamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agora vamos agendar a sua coleta, nós da Garbage SA nos preocupamos com a flexibilidade, portanto disponibilizamos uma agenda com datas e horários em que o caminhão de coleta irá passar em seu bairro. Selecione o mais apropriado para você. \nApós selecionar o melhor dia e horário e clicar em agendamento você irá receber um alerta em seu celular, pedimos para que clique no alerta para confirmar o agendamento e prosseguir para a próxima tela. \nOs pontos serão creditados em sua conta a partir do momento que a coleta é finalizada. Não é o máximo?\nTambém fazemos coletas aos sábados, tudo isso pensando em sua flexibilidade e no bem estar do nosso planeta."
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/txv_head"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"/>
+
+    <CheckBox
+        android:id="@+id/agendamento1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:buttonTint="@color/white"
+        android:text="Dia 11/10 (Terça-feira) - 15:30 horas"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/agendamento2"
+        app:layout_constraintStart_toStartOf="@id/txv_agendamento"
+        app:layout_constraintTop_toBottomOf="@id/txv_agendamento" />
+
+    <CheckBox
+        android:id="@+id/agendamento3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:buttonTint="@color/white"
+        android:text="Dia 19/10 (Quarta-feira) - 18:45 horas"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/agendamento4"
+        app:layout_constraintStart_toStartOf="@id/agendamento2"
+        app:layout_constraintTop_toBottomOf="@id/agendamento2" />
+
+    <CheckBox
+        android:id="@+id/agendamento4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:buttonTint="@color/white"
+        android:text="Dia 24/10 (Segunda-feira) - 12:00 horas"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/agendamento5"
+        app:layout_constraintStart_toStartOf="@id/agendamento3"
+        app:layout_constraintTop_toBottomOf="@id/agendamento3" />
+
+    <CheckBox
+        android:id="@+id/agendamento5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:buttonTint="@color/white"
+        android:text="Dia 29/10 (Sábado) - 10:00 horas"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/continueBtn"
+        app:layout_constraintStart_toStartOf="@id/agendamento4"
+        app:layout_constraintTop_toBottomOf="@id/agendamento4" />
+
+    <CheckBox
+        android:id="@+id/agendamento2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:buttonTint="@color/white"
+        android:text="Dia 14/10 (Sexta-feira) - 07:30 horas"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/agendamento3"
+        app:layout_constraintStart_toStartOf="@id/agendamento1"
+        app:layout_constraintTop_toBottomOf="@id/agendamento1" />
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:onClick="acessarAgendamentoConfirmadoActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white_greyish"
+        android:padding="3dp"
+        android:text="Agendamento"
+        android:textColor="#009688"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="560dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

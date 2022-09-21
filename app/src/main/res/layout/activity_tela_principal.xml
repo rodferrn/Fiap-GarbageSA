@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".TelaPrincipalActivity">
+
+    <TextView
+        android:id="@+id/txv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/garbage_sa_title"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/txv_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Central de coleta"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/txv_title"
+        app:layout_constraintStart_toStartOf="@id/txv_title"
+        app:layout_constraintEnd_toEndOf="@id/txv_title"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/txv_confirmMapLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_head"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <TextView
+        android:id="@+id/txv_confirmMapLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Após confirmar sua localização basta clicar em AGENDAR COLETA. Você também pode usar o mesmo endereço utilizado no momento em que efetuou o cadastro. "
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/cbUseRegisteredAddress"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <CheckBox
+        android:id="@+id/cbUseRegisteredAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Usar meu endereço cadastrado: Av. Washington Luis - 4150"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/continueBtn"
+        app:layout_constraintStart_toStartOf="@id/txv_confirmMapLocation"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:onClick="acessarTelaAgendamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white_greyish"
+        android:padding="3dp"
+        android:text="Agendar coleta"
+        android:textColor="#009688"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="560dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

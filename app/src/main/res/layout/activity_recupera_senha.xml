@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".RecuperaSenhaActivity">
+
+    <TextView
+        android:id="@+id/txv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/garbage_sa_title"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/txv_recuperaSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recuperar senha"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/txv_title"
+        app:layout_constraintStart_toStartOf="@id/txv_title"
+        app:layout_constraintEnd_toEndOf="@id/txv_title"
+        android:layout_marginTop="180dp"
+        />
+
+    <EditText
+        android:id="@+id/txv_email"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="8dp"
+        android:hint="Digite o email cadastrado"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txv_recuperaSenha"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <View
+        android:id="@+id/quebra_linha_email"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/txv_email"
+        app:layout_constraintStart_toStartOf="@id/txv_email"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        />
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:onClick="acessarLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white_greyish"
+        android:padding="3dp"
+        android:text="Enviar"
+        android:textColor="#009688"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="560dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
